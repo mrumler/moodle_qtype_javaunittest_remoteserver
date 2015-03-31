@@ -9,6 +9,6 @@
  * @author 		Michael Rumler, rumler@ni.tu-berlin.de,  Berlin Institute of Technology
  * @license 	http://www.gnu.org/copyleft/gpl.html GNU Public License
  */
-$version = 2014092401;
+$version = 2015031701;
 
 $release = 2.00;
