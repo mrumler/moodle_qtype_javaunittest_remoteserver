@@ -72,7 +72,7 @@ echo json_encode ( $ret );
 
 write_log ( 
         '[questionattemptid ' . intval ( $_POST['attemptid'] ) . '] request took ' .
-                 round ( (microtime ( true ) - $time_start), 2 ) . ' ms' );
+                 round ( (microtime ( true ) - $time_start), 2 ) . ' s' );
 
 /**
  * Execute a command on shell and return all outputs
@@ -294,7 +294,7 @@ function compile_execute() {
 function compile($file) {
     global $memory_limit_output, $timeoutreal;
     
-    $command = PATH_TO_JAVAC . ' -nowarn -cp ' . PATH_TO_JUNIT . ' -sourcepath ' . dirname ( $file ) . ' ' . $file;
+    $command = PATH_TO_JAVAC . ' -encoding UTF-8 -nowarn -cp ' . PATH_TO_JUNIT . ' -sourcepath ' . dirname ( $file ) . ' ' . $file;
     
     // execute the command
     $compileroutput = '';
