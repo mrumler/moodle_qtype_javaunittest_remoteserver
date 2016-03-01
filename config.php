@@ -37,7 +37,7 @@ define ( 'PASSWORD', '' );
  *
  * @staticvar string DATAROOT
  */
-define ( 'DATAROOT', '/var/www/moodledataremote' );
+define ( 'DATAROOT', '/var/www/moodledata_remote' );
 
 /**
  * Memory limit (heap) in MB This sets the option -Xmx for the Java VM. Specifies the maximum size of the memory
@@ -74,6 +74,7 @@ define ( 'PRECOMMAND', 'ulimit -t 8' );
  * Configure local path settings here.
  *
  * @staticvar string PATH_TO_JAVAC
+ * @staticvar string PATH_TO_JAVAP
  * @staticvar string PATH_TO_JAVA
  * @staticvar string PATH_TO_JUNIT
  * @staticvar string PATH_TO_HAMCREST
@@ -81,6 +82,9 @@ define ( 'PRECOMMAND', 'ulimit -t 8' );
  */
 // e.g. define('PATH_TO_JAVAC', '/usr/lib/jvm/java-7-openjdk-amd64/bin/javac');
 define ( 'PATH_TO_JAVAC', '/usr/lib/jvm/java-7-openjdk-amd64/bin/javac' );
+
+// e.g. define ( 'PATH_TO_JAVAP', '/usr/lib/jvm/java-7-openjdk-amd64/bin/javap' );
+define ( 'PATH_TO_JAVAP', '/usr/lib/jvm/java-7-openjdk-amd64/bin/javap' );
 
 // e.g. define ( 'PATH_TO_JAVA', '/usr/lib/jvm/java-7-openjdk-amd64/bin/java' );
 define ( 'PATH_TO_JAVA', '/usr/lib/jvm/java-7-openjdk-amd64/bin/java' );
@@ -106,4 +110,4 @@ define ( 'DEBUG_NOCLEANUP', 0 );
  *
  * @staticvar string LOGFILE
  */
-define ( 'LOGFILE', '/var/www/moodledataremote/serverlogfile.txt' );
+define ( 'LOGFILE', '/var/www/moodledata_remote/serverlogfile.txt' );
