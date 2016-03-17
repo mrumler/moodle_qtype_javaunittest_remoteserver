@@ -8,6 +8,6 @@
  * @author     Michael Rumler, rumler@ni.tu-berlin.de
  * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License
  */
-$version = 2016031600;
+$version = 2016031700;
 
 $release = 2.03;
